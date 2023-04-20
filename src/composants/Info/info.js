@@ -1,8 +1,8 @@
 import React from "react";
-import "./info.css";
 import filmsJson from "../../data/db.json";
 import noImg from "../../data/image/no-movie.png"
 import { useSearchParams } from "react-router-dom";
+import "./info.css";
 
 function Info(){
 
@@ -12,10 +12,10 @@ function Info(){
     console.log(id.get("id"));
 
 return (
-    <div class="infos">
-        <div class="content">    
 
-        <h1 className="titleInfo" key={"title"}>{film.title}</h1>
+    <div class="content">    
+
+        <p className="titleInfo" key={"title"}>{film.title}</p>
 
         <img className="imgInfo" src={film.posterUrl} 
         
@@ -24,14 +24,18 @@ return (
         e.target.src = noImg;
                 }} />
 
-        <h2>{film.year}</h2>
-        <h3>{film.plot}</h3>
-        <h4>{film.genres}</h4>
-        <h4>{film.director}</h4>
-        <h4>{film.actors}</h4>
+        <p className="year">{film.year}</p>
+
+        <p className="plot">{film.plot}</p>
+
+        <p className="genres">{film.genres+" "}</p>
+
+        <p className="director">{film.director}</p>
+
+        <p className="actor">{film.actors}</p>
 
     </div> 
-</div>
+
 );
 }
 

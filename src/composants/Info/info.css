@@ -1,13 +1,35 @@
-.infos{
+.content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.titleInfo{
     align-items: center;
-}
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #272727;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 350px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
 
-img{
-    height: 90vh;
-    width: 480px;
-}
+  }
+  
+  .imgInfo {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .titleInfo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .year, .plot, .genres, .director, .actor {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
