@@ -1,0 +1,13 @@
+.infos{
+    display: flex;
+    justify-content: center;
+}
+
+.titleInfo{
+    align-items: center;
+}
+
+img{
+    height: 90vh;
+    width: 480px;
+}

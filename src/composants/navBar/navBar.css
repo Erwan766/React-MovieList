@@ -1,0 +1,52 @@
+.nav{
+    display: flex ;
+    justify-content: space-between;
+    background-color: rgb(39, 39, 39);
+    border: solid 1px rgb(39, 39, 39);
+    margin-bottom: 25px;
+}
+
+.png1{
+    width: 120px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.png2{
+    width: 120px;
+    height: 80px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    position: absolute;
+    margin-left: 220px;
+}
+
+h4{
+    margin-top: 35px;
+    position: absolute;
+    margin-left: 420px;
+}
+
+.back{
+text-decoration: none;
+color: white;
+font-size: large;
+background-color: #3A3A3A;
+padding: 10px;
+border-radius: 5px;
+margin-top: 2%;
+margin-bottom: 3%;
+position: relative;
+top: 30px;
+}
+
+.back :hover{
+    transform: scale(1.05);
+}
+
